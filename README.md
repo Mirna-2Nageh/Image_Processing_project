@@ -91,4 +91,72 @@ A **Python-based interactive GUI application** for performing a wide range of **
 
 ```bash
 git clone https://github.com/yourusername/image-processing-compression-tool.git
-cd image-processing-compression-tool
+cd image-processing-compression-tool```
+Install dependencies:
+
+pip install -r requirements.txt
+
+Usage
+
+Run the Streamlit app:
+
+streamlit run app.py
+
+
+Upload an image from the sidebar.
+
+Use the tabs to apply transformations, filters, histogram equalization, and compression.
+
+Adjust sliders and settings interactively.
+
+View original vs processed images in real-time.
+
+Download processed images using the "Advanced" tab.
+
+Project Structure
+image-processing-compression-tool/
+│
+├── app.py                 # Main Streamlit app
+├── README.md              # Project documentation
+├── requirements.txt       # Python dependencies
+├── utils/                 # Helper functions (image ops, compression)
+└── assets/                # Optional: example images or icons
+
+Operations & Functionalities
+Category	Operations
+Basic	Grayscale, Binary, PSNR/MSE
+Transformations	Translation, Scaling, Rotation, Shear
+Interpolation	Nearest, Bilinear, Bicubic
+Histogram	Compute, Equalize, Visualize
+Filters	Gaussian, Median, Laplacian, Sobel, Gradient
+Image Operations	Invert, Blend, Brightness/Contrast
+Cropping / Export	ROI selection, save locally
+Compression Techniques	Huffman, RLE, LZW, DCT, Wavelet, Arithmetic coding
+Future Enhancements
+
+Implement Golomb–Rice coding and Bit-plane coding.
+
+Real-time interactive ROI selection using mouse (instead of sliders).
+
+Advanced image blending with masks.
+
+Batch processing of multiple images.
+
+GPU acceleration for faster filtering and transformations.
+
+License
+
+This project is licensed under the MIT License.
+
+Screenshots
+
+(Add screenshots here showing original vs processed images, filters, histogram, compression results.)
+
+Author
+
+Mirna Nageh Botros
+AI | ML Engineer | Data Scientist
+Email: mirnanagehb.w@gmail.com
+
+
+LinkedIn: linkedin.com/in/mirnanageh
