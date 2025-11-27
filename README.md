@@ -5,7 +5,7 @@
 A comprehensive Python-based image processing application with a modern graphical user interface that implements various computer vision algorithms from scratch. This project demonstrates custom implementations of fundamental and advanced image processing techniques without relying on built-in high-level functions.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-GUI-orange)
+![Streamlit]([https://img.shields.io/badge/Streamlit-GUI-orange](https://mirna-2nageh-image--image-processing-compression-toolapp-t8d54j.streamlit.app/))
 ![OpenCV](https://img.shields.io/badge/Custom-Algorithms-green)
 
 ## 🎯 Features
