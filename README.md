@@ -4,11 +4,27 @@
 
 A comprehensive Python-based image processing application with a modern graphical user interface that implements various computer vision algorithms from scratch. This project demonstrates custom implementations of fundamental and advanced image processing techniques without relying on built-in high-level functions.
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Streamlit]([https://img.shields.io/badge/Streamlit-GUI-orange](https://mirna-2nageh-image--image-processing-compression-toolapp-t8d54j.streamlit.app/))
-![OpenCV](https://img.shields.io/badge/Custom-Algorithms-green)
+# 🖼️ Advanced Image Processing Laboratory
 
+## 🌐 Live Demo
+
+**[🚀 Try the Live Application Here](https://mirna-2nageh-image--image-processing-compression-toolapp-t8d54j.streamlit.app/)**
+
+*No installation required - experience all image processing features directly in your browser!*
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-GUI-orange)
+![OpenCV](https://img.shields.io/badge/Custom-Algorithms-green)
+![Live](https://img.shields.io/badge/🚀-Live_Demo-brightgreen)
+
+## 📋 Project Overview
+
+A comprehensive Python-based image processing application with a modern graphical user interface that implements various computer vision algorithms from scratch...
+
+[Rest of your README content continues...]
 ## 🎯 Features
+#You Can try :-
+https://mirna-2nageh-image--image-processing-compression-toolapp-t8d54j.streamlit.app/
 
 ### 🔍 Basic Image Operations
 - **Image Reading & Information Display** - Resolution, size, type
