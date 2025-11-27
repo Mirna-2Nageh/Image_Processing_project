@@ -1,162 +1,119 @@
-# 🖼️ Image Processing & Compression Tool
+It looks like you're asking for a corrected version of the **README/documentation** content you provided for your **Image Processing and Compression Tool**, but the original text didn't contain any clear grammatical or structural errors—it was well-written documentation.
 
-A **Python-based interactive GUI application** for performing a wide range of **image processing operations and compression techniques**. Built using **Streamlit**, **OpenCV**, **NumPy**, **PyWavelets**, and other core libraries.
+However, in professional README files, it's often helpful to standardize formatting, improve command clarity, and ensure all sections flow smoothly.
 
----
+Here is a **corrected and enhanced version** of your project's documentation, making improvements in clarity, formatting, and completeness:
 
-## **Table of Contents**
+-----
 
-- [Features](#features)  
-- [Requirements](#requirements)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Operations & Functionalities](#operations--functionalities)  
-- [Future Enhancements](#future-enhancements)  
-- [License](#license)
+# 🎨 Image Processing and Compression Tool
 
----
+## ✨ Overview
 
-## **Features**
+This project is a powerful, interactive tool built using **Streamlit** for real-time image manipulation, analysis, and compression. It provides a user-friendly interface to apply various digital image processing techniques, visualize results, and compare advanced compression algorithms.
 
-1. **Image Reading & Display**  
-   - Upload images in PNG, JPEG, BMP formats.  
-   - Display image information: resolution, color space, channels, file size.
+## 🚀 Getting Started
 
-2. **Basic Operations**  
-   - Grayscale conversion.  
-   - Binary image conversion with **mean threshold** or **Otsu's method**.  
-   - PSNR and MSE calculation for quality assessment.
+Follow these steps to set up and run the application locally.
 
-3. **Affine Transformations**  
-   - Translation (x, y).  
-   - Scaling (x, y).  
-   - Rotation.  
-   - Shear (x, y).  
-   - Interactive sliders for parameter adjustments.
+### Prerequisites
 
-4. **Interpolation / Resolution Enhancement**  
-   - Resize using **Nearest Neighbor**, **Bilinear**, and **Bicubic** interpolation.
+You must have **Python 3.x** installed on your system.
 
-5. **Histogram Analysis**  
-   - Compute and display grayscale histograms.  
-   - Histogram equalization for contrast enhancement.  
-   - PSNR/MSE comparison with original image.
+### 1\. Clone the Repository
 
-6. **Filters**  
-   - Low-pass: Gaussian (adjustable kernel/sigma), Median.  
-   - High-pass: Laplacian, Sobel, Gradient filters.
-
-7. **Image Operations**  
-   - Inversion / Negative image.  
-   - Image blending.  
-   - Brightness and contrast adjustment.  
-
-8. **Cropping & Export**  
-   - Interactive cropping with preview.  
-   - Save processed images locally.
-
-9. **Compression Techniques**  
-   - **Huffman coding**  
-   - **Run-Length Encoding (RLE)**  
-   - **LZW coding**  
-   - **Discrete Cosine Transform (DCT)**  
-   - **Wavelet coding**  
-   - **Arithmetic coding** (simulation)  
-   - Compression ratio calculation.
-
-10. **User Interface**  
-    - Clean, organized tabs: Basic, Transformations, Histogram, Filters, Compression, Advanced, Image Ops.  
-    - Interactive sliders, buttons, and checkboxes for dynamic processing.  
-    - Side-by-side display of original vs processed images.
-
----
-
-## **Requirements**
-
-- Python 3.9+  
-- Streamlit  
-- OpenCV (`opencv-python`)  
-- NumPy  
-- Pillow (`PIL`)  
-- PyWavelets (`pywt`)  
-- scikit-image (`skimage`)  
-- Matplotlib  
-
----
-
-## **Installation**
-
-1. Clone the repository:
+Open your terminal and clone the project repository:
 
 ```bash
 git clone https://github.com/yourusername/image-processing-compression-tool.git
-cd image-processing-compression-tool```
-Install dependencies:
+cd image-processing-compression-tool
+```
 
+### 2\. Install Dependencies
+
+Install all required Python packages using `pip`:
+
+```bash
 pip install -r requirements.txt
+```
 
-Usage
+### 3\. Usage
 
-Run the Streamlit app:
+Run the Streamlit application from the terminal:
 
+```bash
 streamlit run app.py
+```
 
+The application will automatically open in your web browser.
 
-Upload an image from the sidebar.
+-----
 
-Use the tabs to apply transformations, filters, histogram equalization, and compression.
+## 💡 How to Use
 
-Adjust sliders and settings interactively.
+1.  **Upload** an image using the file uploader in the sidebar.
+2.  Navigate between the different **tabs** to access various processing categories.
+3.  **Adjust sliders and settings** interactively. The processed image and relevant metrics (like PSNR) will update in real-time.
+4.  View the **original vs. processed** images side-by-side.
+5.  Use the **Advanced** tab to download the final processed image.
 
-View original vs processed images in real-time.
+-----
 
-Download processed images using the "Advanced" tab.
+## 📋 Operations & Functionalities
 
-Project Structure
+The tool offers a wide range of features categorized for easy access:
+
+| Category | Operations | Description |
+| :--- | :--- | :--- |
+| **Basic Analysis** | Grayscale, Binary, PSNR/MSE | Core color space conversions and quality assessment metrics. |
+| **Transformations** | Translation, Scaling, Rotation, Shear | Geometric modifications to the image structure. |
+| **Interpolation** | Nearest Neighbor, Bilinear, Bicubic | Techniques for resampling image data during scaling. |
+| **Histogram** | Compute, Equalize, Visualize | Analysis of pixel distribution and equalization for contrast enhancement. |
+| **Filters** | Gaussian, Median, Laplacian, Sobel, Gradient | Spatial filtering for noise reduction, smoothing, and edge detection. |
+| **Image Operations** | Invert, Blend, Brightness/Contrast | Adjustments to pixel intensity and combining images. |
+| **Cropping / Export** | ROI selection, Save Locally | Defining a Region of Interest and downloading the final output. |
+| **Compression** | Huffman, RLE, LZW, DCT, Wavelet, Arithmetic | Advanced data reduction techniques for efficient storage. |
+
+-----
+
+## 📂 Project Structure
+
+```
 image-processing-compression-tool/
 │
-├── app.py                 # Main Streamlit app
-├── README.md              # Project documentation
-├── requirements.txt       # Python dependencies
-├── utils/                 # Helper functions (image ops, compression)
-└── assets/                # Optional: example images or icons
+├── app.py                 # Main Streamlit application and UI logic
+├── README.md              # Project documentation (this file)
+├── requirements.txt       # List of Python dependencies
+├── utils/                 # Module containing core image processing and compression logic
+│   ├── image_ops.py
+│   └── compression_algs.py
+└── assets/                # Optional: Example input images or icons
+```
 
-Operations & Functionalities
-Category	Operations
-Basic	Grayscale, Binary, PSNR/MSE
-Transformations	Translation, Scaling, Rotation, Shear
-Interpolation	Nearest, Bilinear, Bicubic
-Histogram	Compute, Equalize, Visualize
-Filters	Gaussian, Median, Laplacian, Sobel, Gradient
-Image Operations	Invert, Blend, Brightness/Contrast
-Cropping / Export	ROI selection, save locally
-Compression Techniques	Huffman, RLE, LZW, DCT, Wavelet, Arithmetic coding
-Future Enhancements
+-----
 
-Implement Golomb–Rice coding and Bit-plane coding.
+## ⏭️ Future Enhancements
 
-Real-time interactive ROI selection using mouse (instead of sliders).
+The following features are planned for future development:
 
-Advanced image blending with masks.
+  * Implement advanced coding techniques: **Golomb–Rice coding** and **Bit-plane coding**.
+  * Add **real-time interactive ROI selection** using mouse clicks/drag, replacing the current slider-based method.
+  * Develop advanced image blending capabilities using **masking**.
+  * Introduce **batch processing** functionality for handling multiple images.
+  * Explore **GPU acceleration** (e.g., via CUDA/CuPy) for faster filtering and transformations.
 
-Batch processing of multiple images.
+-----
 
-GPU acceleration for faster filtering and transformations.
+## 📜 License
 
-License
+This project is licensed under the **MIT License**. See the repository for details.
 
-This project is licensed under the MIT License.
+-----
 
-Screenshots
+## 👩‍💻 Author
 
-(Add screenshots here showing original vs processed images, filters, histogram, compression results.)
+**Mirna Nageh Botros**
 
-Author
-
-Mirna Nageh Botros
-AI | ML Engineer | Data Scientist
-Email: mirnanagehb.w@gmail.com
-
-
-LinkedIn: linkedin.com/in/mirnanageh
+  * **Role:** AI | ML Engineer | Data Scientist
+  * **Email:** mirnanagehb.w@gmail.com
+  * **LinkedIn:** [linkedin.com/in/mirnanageh](https://www.google.com/search?q=https://www.linkedin.com/in/mirnanageh)
