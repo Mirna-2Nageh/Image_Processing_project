@@ -109,4 +109,4 @@ This project is licensed under the **MIT License**. See the repository for detai
 
   * **Role:** AI | ML Engineer | Data Scientist
   * **Email:** mirnanagehb.w@gmail.com
-  * **LinkedIn:** [linkedin.com/in/mirnanageh](https://www.google.com/search?q=https://www.linkedin.com/in/mirnanageh)
+  * **LinkedIn:** [linkedin.com/in/mirnanageh](https://www.google.com/search?q=https://www.linkedin.com/in/mirna-nageh-botros)
