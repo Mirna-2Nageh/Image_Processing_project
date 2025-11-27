@@ -1,10 +1,3 @@
-It looks like you're asking for a corrected version of the **README/documentation** content you provided for your **Image Processing and Compression Tool**, but the original text didn't contain any clear grammatical or structural errors—it was well-written documentation.
-
-However, in professional README files, it's often helpful to standardize formatting, improve command clarity, and ensure all sections flow smoothly.
-
-Here is a **corrected and enhanced version** of your project's documentation, making improvements in clarity, formatting, and completeness:
-
------
 
 # 🎨 Image Processing and Compression Tool
 
